@@ -1,0 +1,8 @@
+[Unit]
+Description=Hourly Time Signal
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/share/hourly-time-signal/hts.sh
