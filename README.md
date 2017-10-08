@@ -1,6 +1,6 @@
 # Hourly Time Signal
 
-This script plays mp3 file every hour.
+This script plays a mp3 file every hour.
 
 ## Installation
 Before executing following commands, copy a mp3 file which you want to set as signal to the directory and rename it to "sound.mp3".
