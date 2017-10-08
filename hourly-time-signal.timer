@@ -5,5 +5,5 @@ Description=Timer for Hourly Time Signal
 WantedBy=timers.target
 
 [Timer]
-OnCalender=*-*-* *:00:00
+OnCalendar=*-*-* *:00:00
 Unit=hourly-time-signal.service
