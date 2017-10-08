@@ -5,4 +5,4 @@ Description=Hourly Time Signal
 WantedBy=multi-user.target
 
 [Service]
-ExecStart=/usr/share/hourly-time-signal/hts.sh
+ExecStart=/bin/sh -c "mpg123 $HOME/.config/hourly-time-signal/signal.mp3"

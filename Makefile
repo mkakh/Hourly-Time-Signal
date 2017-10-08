@@ -1,8 +1,9 @@
 .PHONY:install remove
 install:
-	cp -v hourly-time-signal.service /usr/lib/systemd/system/
-	mkdir -p /usr/share/hourly-time-signal
-	cp -v hts.sh sound.mp3 /usr/share/hourly-time-signal
+	mkdir -p ~/.config/systemd/user
+	mkdir -p ~/.config/hourly-time-signal
+	cp -v hourly-time-signal.service hourly-time-signal.timer ~/.config/systemd/user/
+	cp -v signal.mp3 ~/.config/hourly-time-signal/signal.mp3
 remove:
-	rm -v /usr/lib/systemd/system/hourly-time-signal.service
-	rm -rvf /usr/share/hourly-time-signal
+	rm -v ~/.config/systemd/user/hourly-time-signal.*
+	rm -rvf ~/.config/hourly-time-signal
